@@ -1,9 +1,7 @@
+package Utilities;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.util.List;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 
@@ -18,10 +16,8 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.NoSuchFrameException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -35,7 +31,6 @@ import org.apache.commons.configuration2.PropertiesConfiguration;
 //import org.apache.commons.lang.RandomStringUtils;
 //import org.apache.log4j.Category;
 //import org.apache.logging.log4j.PropertyConfigurator;
-import org.apache.logging.log4j.*;
 import cucumber.api.Scenario;
 
 
@@ -109,8 +104,6 @@ public class WebDriverUtility {
         } catch (UnreachableBrowserException e) {
         }
     }
-
-
 
 
     public String getTitle(){

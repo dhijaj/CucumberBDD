@@ -5,9 +5,9 @@ import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import Utilities.WebDriverUtility;
 
-
-public class EbayStepDef {
+public class EbayStepDef extends WebDriverUtility {
 
     @Given("^I am on the \"([^\"]*)\" page on URL \"([^\"]*)\"$")
     public void i_am_on_the_page_on_URL(String arg1, String arg2) throws Throwable {
